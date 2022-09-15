@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamil Korzeniewski 4D">
+    <meta name="description" content="strona o dźwięku analogowym i cyfrowym">
+    <meta name="keywords" content="dźwięk analogowy cyfrowy">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Strona o dźwięku</title>
+</head>
+<body>
+    <div id="Wrapper">
+        <h1>Dźwięk</h1>
+        <h2>Podstawowe informacje na temat dźwięku</h2>
+        <p><b>Dźwięk analogowy</b> jest uważany za prawdziwą i dokładną reprezentację dźwięku nagranego w danym momencie. Jest to dokładny dźwięk zebrany przez urządzenie nagrywające, np. mikrofon. Nośniki analogowe to na przykład taśma magnetofonowa lub płyta gramofonowa.</p>
+        <p><b>Dźwięk cyfrowy</b> to reprezentacja dźwięku zapisana w binarnej formie Taki zapis zawsze będzie gorszy od oryginału.</p>
+        <p>Aby dźwięk analogowy zapisać w postaci cyfrowej, należy poddać go trzem procesom:
+            <ul>
+                <li><b>Próbkowanie</b> - pobieranie informacji na temat poziomu dźwięku i zapisanie go jako liczby</li>
+                <li><b>Kwantyzacja</b> - przypisanie pobranym wcześniej próbkom odpowiedni poziom kwantyzacji</li>
+                <li><b>Kodowanie</b> - zapis informacji w formie zer i jedynek</li>
+            </ul>
+        </p>
+        <h4>Wielkości charakteryzujące dźwięk:</h4>
+            <ul>
+                <li>Składowa</li>
+                <li>częstotliwość próbkowania</li>
+                <li>Wysokość dźwięku</li>
+                <li>Widmo dźwięku</li>
+                <li>Barwa dźwięku</li>
+            </ul>
+        <h4>Wzór na rozmiar pliku: częstotliwość próbkowania x liczba bitów x liczba sekund x liczba kanałów</h4>
+        <h2>Wahwah</h2>
+        <p><b>Wahwah</b> to efekt w programie Audacity służący do utworzenia "falującego" dźwięku. Przypomina to naprzemienne zasłanianie i odsłanianie ust podczas mówienia.</p>
+        <p>Tak wyglądała i brzmiała próbka dźwięku przed poddaniu ją efektowi Wahwah:</p>
+        <img src="przed.png" alt="Graficzna reprezentacja próbki dźwięku przed obróbką"><br>
+        <audio controls><source src="gramy.mp3" type="audio/mpeg"></audio><br>
+        <p>A tak po:</p>
+        <img src="po.png" alt="Graficzna reprezentacja próbki dźwięku po obróbce"><br>
+        <audio controls><source src="gramy2.mp3" type="audio/mpeg"></audio><br>
+        <h4>Parametry</h4>
+        <img src="wahwah.png" alt="Parametry efektu wahwah">
+        <ul>
+            <li>Częstotliwość LFO - Ustawia prędkość, z jaką filtr przesuwa się</li>
+            <li>Faza początkowa LFO - Określa to, czy filtr zaczyna się od najniższyej, średniej czy najwyższej częstotliwości</li>
+            <li>Głębokość - Określa zakres częstotliwości, przez które filtr będzie przechodził. Wyższe wartości dają większą zmienność częstotliwości dźwięku w pełnym cyklu LFO. Niższe wartości dadzą bardziej stały efekt dźwiękowy</li>
+            <li>Rezonans - Określa stopień rezonansu</li>
+            <li>Przesunięcie częstotliwości Wah - Określa częstotliwość "bazową" filtra</li>
+            <li>Wzmocnienie sygnału - pozwala zwiększyć natężenie dźwięku</li>
+        </ul>
+    </div>
+</body>
+</html>
